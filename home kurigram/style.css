@@ -1,0 +1,229 @@
+.container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 0rem;
+}
+
+.homeBanner .homeBanner__item {
+  position: relative;
+  overflow: hidden;
+}
+.homeBanner .homeBanner__item #firstban {
+  height: 35rem;
+  z-index: -1;
+  position: absolute;
+  left: -20rem;
+}
+.homeBanner .homeBanner__item--text {
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.homeBanner .homeBanner__item #secban {
+  height: 35rem;
+  z-index: -1;
+  position: absolute;
+  left: -27rem;
+}
+
+.feature {
+  padding-bottom: 5rem;
+}
+.feature .feature__wrapper {
+  text-align: center;
+}
+.feature .feature__wrapper .title-text {
+  font-size: 1.3rem;
+  padding: 0 1.5rem;
+}
+.feature .feature__wrapper .feature__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 28rem;
+  height: 26rem;
+  perspective: 1000px;
+}
+.flip-card i {
+  font-size: 4rem;
+}
+.flip-card h3:hover {
+  color: black;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: cyan;
+  color: white;
+}
+.flip-card-back {
+  background-color: rgb(0, 196, 196);
+  color: white;
+  transform: rotateX(180deg);
+}
+.flip-card-text {
+  padding: 2rem;
+}
+
+.different {
+  padding-bottom: 8rem;
+}
+.different .meet__slider {
+  padding-bottom: 3rem;
+}
+.different .meet__slider img {
+  height: 20rem;
+}
+.different__why .why__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.different__why-item {
+  font-size: 1.2rem;
+}
+.different__why-item i {
+  font-size: 2rem;
+  color: rgb(0, 226, 226);
+}
+.different__why-item p {
+  margin: 0;
+}
+.different__why-item h3 {
+  margin: 5px 0px;
+}
+.different .progress {
+  padding-top: 4rem;
+  width: 100%;
+  max-width: 35rem;
+}
+.different .progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.different .progress-bar {
+  width: 100%;
+  background-color: #d8d8d8;
+  height: 0.5rem;
+}
+.different .progress-fill {
+  height: 100%;
+  width: 25rem;
+  background-color: #00a7bd;
+}
+
+.service__wrapper .service__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.service__wrapper .service__cards .service__card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 25rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.service__wrapper .service__cards .service__card .card__wrap {
+  padding: 3rem 1rem;
+  z-index: 999;
+}
+.service__wrapper .service__cards .service__card .card__wrap i {
+  font-size: 3.5rem;
+}
+.service__wrapper .service__cards .service__card .card__wrap h3 {
+  font-size: 1.6rem;
+}
+.service__wrapper .service__cards .service__card .card__wrap p {
+  font-size: 1.5rem;
+  margin: 0 0 3rem 0;
+}
+.service__wrapper .service__cards .service__card::before {
+  width: 2px;
+  height: 100%;
+  background-color: lightblue;
+  content: "";
+  position: absolute;
+  transition: 0.5s ease;
+}
+.service__wrapper .service__cards .service__card:hover {
+  color: white;
+  transition: 0.5s ease;
+}
+.service__wrapper .service__cards .service__card:hover::before {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.service__wrapper .service__cards .service__card:hover a {
+  color: white;
+  transition: 0.5s ease;
+}
+.service__title {
+  text-align: center;
+}
+
+.portfolio_tabs ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.portfolio_tabs ul li {
+  list-style: none;
+  border: gray 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.portfolio_tabs ul li:hover {
+  background-color: lightblue;
+  color: white;
+  transition: 0.3s ease;
+}
+.portfolio_tabs ul li.active {
+  background-color: lightblue;
+  color: white;
+}
+.portfolio_content_item {
+  display: none;
+}
+.portfolio_content_item.active {
+  display: block;
+}
+.portfolio_title {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
